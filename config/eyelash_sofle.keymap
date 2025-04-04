@@ -85,20 +85,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        alpha {
             bindings = <
 &kp ESC     &kp N1       &kp N2          &kp N3            &kp N4       &kp N5       &kp UP_ARROW     &kp N6     &kp N7           &kp N8             &kp N9           &kp N0          &kp MINUS
 &kp TAB     &kp Q        &kp W           &kp E             &kp R        &kp T        &kp DOWN_ARROW   &kp Y      &kp U            &kp I              &kp O            &kp P           &kp BSLH
 &kp CAPS    &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LGUI F   &kp G        &kp LEFT_ARROW   &kp H      &mt RIGHT_GUI J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RCTRL SEMI  &kp APOS
 &kp LSHFT   &kp Z        &kp X           &kp C             &kp V        &kp B        &kp RIGHT_ARROW  &kp N      &kp M            &kp COMMA          &kp DOT          &kp FSLH        &kp EQUAL
-&kp C_MUTE  &kp LG(C)    &kp LG(V)       &lt 3 ESC         &lt 2 SPACE  &lt 1 TAB    &kp ENTER        &lt 1 RET  &lt 2 BACKSPACE  &lt 3 DEL          &vimout          &gitcomm
+&kp C_MUTE  &kp LG(C)    &kp LG(V)       &kp ESCAPE        &lt 2 SPACE  &lt 1 TAB    &kp ENTER        &lt 1 RET  &lt 2 BACKSPACE  &kp DELETE         &vimout          &gitcomm
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
         };
 
-        layer_1 {
+        nav {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PAGE_DOWN    &kp PAGE_UP      &kp HOME      &kp END    &kp MINUS         &kp EQUAL
@@ -111,6 +111,16 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
+        sym {
+            bindings = <
+&trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp N8        &kp N9        &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &kp COMMA     &kp N0        &kp PERIOD    &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans        &trans        &trans        &trans               &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         layer_2 {
             bindings = <
 &kp TILDE       &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
@@ -121,16 +131,6 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
