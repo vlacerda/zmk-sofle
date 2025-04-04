@@ -51,9 +51,6 @@
 <svg id="mdi:keyboard-space">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
 </svg>
-<svg id="mdi:keyboard-tab">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
-</svg>
 <svg id="mdi:menu-down">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-menu-down" viewBox="0 0 24 24"><path d="M7,10L12,15L17,10H7Z" /></svg>
 </svg>
@@ -298,7 +295,9 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
+<a href="#LAYER0">
+<text x="0" y="-4" class="key tap layer-activator">LAYER0</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(84, 56)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -375,7 +374,9 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 112)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+<a href="#layer1">
+<text x="0" y="-4" class="key tap layer-activator">layer1</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(84, 112)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -516,7 +517,9 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 224)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
+<a href="#sym">
+<text x="0" y="-4" class="key tap layer-activator">sym</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(84, 224)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -607,14 +610,14 @@ rect.held, rect.combo.held {
 <g transform="translate(314, 283) rotate(30.0)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
 <a href="#sym">
 <text x="0" y="24" class="key hold layer-activator">sym</text>
 </a></g>
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-return"/>
 <a href="#layer1">
 <text x="0" y="24" class="key hold layer-activator">layer1</text>
 </a></g>
@@ -626,7 +629,7 @@ rect.held, rect.combo.held {
 <g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-return"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
 <a href="#layer1">
 <text x="0" y="24" class="key hold layer-activator">layer1</text>
 </a></g>
