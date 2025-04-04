@@ -1,12 +1,12 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  LAYER0:
+  Layer 0:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: LAYER0, h: toggle}
+  - {t: Layer 0, h: toggle}
   - $$mdi:arrow-up-bold$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
@@ -19,7 +19,7 @@ layers:
   - E
   - R
   - T
-  - {t: layer1, h: toggle}
+  - {t: Layer 1, h: toggle}
   - $$mdi:arrow-down-bold$$
   - {t: \, s: '|'}
   - Y
@@ -32,7 +32,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: LGUI}
   - G
-  - {t: sym, h: toggle}
+  - {t: Layer 2, h: toggle}
   - $$mdi:arrow-left-bold$$
   - {t: '''', s: '"'}
   - H
@@ -58,14 +58,14 @@ layers:
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:keyboard-return$$', h: layer1}
+  - {t: '$$mdi:keyboard-return$$', h: Layer 1}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: layer1}
-  - {t: '$$mdi:backspace$$', h: sym}
+  - {t: '$$mdi:keyboard-space$$', h: Layer 1}
+  - {t: '$$mdi:backspace$$', h: Layer 2}
   - $$mdi:backspace-reverse-outline$$
   - '&vimout'
   - '&gitcomm'
-  layer1:
+  Layer 1:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  sym:
+  Layer 2:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - '7'
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  Layer 3:
   - '~'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -263,13 +263,13 @@ layers:
 combos:
 - p: [14, 15]
   k: '{'
-  l: [LAYER0]
+  l: [Layer 0]
 - p: [16, 15]
   k: '}'
-  l: [LAYER0]
+  l: [Layer 0]
 - p: [16, 17]
   k: (
-  l: [LAYER0]
+  l: [Layer 0]
 - p: [17, 18]
   k: )
-  l: [LAYER0]
+  l: [Layer 0]
