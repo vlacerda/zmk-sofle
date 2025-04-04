@@ -102,7 +102,7 @@
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PAGE_DOWN    &kp PAGE_UP      &kp HOME      &kp END    &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp LEFT         &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &kp LCTRL        &kp LALT        &kp LSHFT        &kp LGUI         &trans             &mmv MOVE_LEFT   &kp LEFT         &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT    &kp F11    &kp F12           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans        &trans     &trans
             >;
@@ -113,11 +113,11 @@
 
         sym {
             bindings = <
-&trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp N8        &kp N9        &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &kp COMMA     &kp N0        &kp PERIOD    &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans        &trans        &trans        &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp N8        &kp N9        &kp RIGHT_BRACKET    &trans  &trans  &trans    &trans     &trans    &trans     &trans
+&trans  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &trans  &trans  &trans    &trans     &trans    &trans     &trans
+&trans  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &trans  &trans  &kp LGUI  &kp LSHFT  &kp LALT  &kp LCTRL  &trans
+&trans  &trans            &kp COMMA     &kp N0        &kp PERIOD    &trans               &trans  &trans  &trans    &trans     &trans    &trans     &trans
+&trans  &trans            &trans        &trans        &trans        &trans               &trans  &trans  &trans    &trans     &trans    &trans
             >;
         };
 
