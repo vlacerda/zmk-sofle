@@ -58,7 +58,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:apple-keyboard-caps$$', h: Media Layer}
-  - {t: '$$mdi:keyboard-return$$', h: Function Layer}
+  - {t: '$$mdi:keyboard-return$$', h: Symbols}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
   - {t: '$$mdi:backspace$$', h: Numbers}
@@ -318,7 +318,7 @@ layers:
   - (
   - )
   - _
-  - {t: '-', s: _}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -383,7 +383,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
