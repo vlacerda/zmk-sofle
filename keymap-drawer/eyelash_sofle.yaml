@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
+  - {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,20 +20,20 @@ layers:
   - E
   - R
   - T
-  - $$mdi:arrow-down-bold$$
+  - Hyper+$$mdi:keyboard-space$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '=', s: +}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
-  - $$mdi:arrow-left-bold$$
+  - Hyper+$$mdi:arrow-left-bold$$
   - H
   - {t: J, h: RIGHT GUI}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:arrow-right-bold$$
+  - Hyper+$$mdi:arrow-right-bold$$
   - N
   - M
   - {t: ',', s: <}
@@ -54,12 +54,12 @@ layers:
   - {t: /, s: '?'}
   - {t: \, s: '|'}
   - $$mdi:volume-off$$
-  - '&open_ray'
-  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
   - {t: '$$mdi:backspace$$', h: Numbers}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Media Layer}
@@ -139,9 +139,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -152,9 +152,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -165,9 +165,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ;, s: ':'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -178,9 +178,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - {t: '-', s: _}
+  - {t: '0', s: )}
+  - +
   - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -192,9 +192,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '-', s: _}
-  - {t: '0', s: )}
-  - +
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   Media Layer:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -390,16 +390,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [14, 15]
-  k: '{'
-  l: [Base]
-- p: [16, 15]
-  k: '}'
-  l: [Base]
-- p: [16, 17]
-  k: (
-  l: [Base]
-- p: [17, 18]
-  k: )
-  l: [Base]
